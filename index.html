@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Team Survey</title>
+  </head>
+  <body>
+    <main>
+      <section id="imgContainer">
+        <div>
+          <object
+            id="svgImg"
+            data="/Assets/Meeting.svg"
+            width="500px"
+            type=""
+          ></object>
+        </div>
+        <div>
+          <h1 id="title">DEV{<span>SQUAD</span>}</h1>
+          <p id="description">
+            Looking for a team of devs? <br />We'll help you find your perfect
+            match!
+          </p>
+        </div>
+      </section>
+      <section id="leftContainer">
+        <div id="formContainer">
+          <form action="" id="survey-form">
+            <div class="formItens">
+              <label for="name" id="name-label">Name</label>
+              <input type="text" id="name" required placeholder="..." />
+            </div>
+            <div class="formItens">
+              <label for="email" id="email-label">Email</label>
+              <input type="email" id="email" required placeholder="..." />
+            </div>
+            <div class="formItens">
+              <p>What are you?</p>
+              <div class="divCheck">
+                <label>
+                  <input type="radio" name="userProf" value="developer" />
+                  Developer
+                </label>
+                <label>
+                  <input type="radio" name="userProf" value="techRecruter" />
+                  Tech Recruter
+                </label>
+              </div>
+            </div>
+            <div class="formItens">
+              <p>What kind of developer are you?</p>
+              <div class="divCheck">
+                <label>
+                  <input type="radio" name="userSpec" value="frontEnd" />
+                  Front End
+                </label>
+                <label>
+                  <input type="radio" name="userSpec" value="backEnd" />
+                  Back End
+                </label>
+                <label>
+                  <input type="radio" name="userSpec" value="fullStack" />
+                  Full Stack
+                </label>
+                <label>
+                  <input type="radio" name="userSpec" value="recruter" />
+                  Recruter
+                </label>
+              </div>
+            </div>
+            <div id="formItens">
+              <label for="number" id="number-label"
+                >How many years of experience?</label
+              >
+              <input
+                id="number"
+                type="number"
+                min="0"
+                max="5"
+                placeholder="..."
+              />
+            </div>
+            <div class="formItens">
+              <p>Why are you looking for a team?</p>
+              <select name="objective" id="dropdown">
+                <option disabled selected value="">Select an option</option>
+                <option value="jobs">Job offer</option>
+                <option value="opensource">OpenSource Project</option>
+                <option value="project">New Project</option>
+                <option value="networking">Networking</option>
+              </select>
+            </div>
+            <div class="formItens">
+              <p>
+                Choose your technologies stack:
+                <span class="clue">(Check all that apply)</span>
+              </p>
+              <div class="divCheck">
+                <label>
+                  <input
+                    class="technologiesCheckbox"
+                    type="checkbox"
+                    name="technologies"
+                    value="bootstrap"
+                  />
+                  Bootstrap
+                </label>
+                <label>
+                  <input
+                    class="technologiesCheckbox"
+                    type="checkbox"
+                    name="technologies"
+                    value="javascript"
+                  />
+                  JavaScript
+                </label>
+                <label>
+                  <input
+                    class="technologiesCheckbox"
+                    type="checkbox"
+                    name="technologies"
+                    value="react"
+                  />
+                  React
+                </label>
+                <label>
+                  <input
+                    class="technologiesCheckbox"
+                    type="checkbox"
+                    name="technologies"
+                    value="angular"
+                  />
+                  Angular
+                </label>
+                <label>
+                  <input
+                    class="technologiesCheckbox"
+                    type="checkbox"
+                    name="technologies"
+                    value="vuejs"
+                  />
+                  Vuejs
+                </label>
+                <label>
+                  <input
+                    class="technologiesCheckbox"
+                    type="checkbox"
+                    name="technologies"
+                    value="ruby"
+                  />
+                  Ruby
+                </label>
+                <label>
+                  <input
+                    class="technologiesCheckbox"
+                    type="checkbox"
+                    name="technologies"
+                    value="nodejs"
+                  />
+                  NodeJs
+                </label>
+                <label>
+                  <input
+                    class="technologiesCheckbox"
+                    type="checkbox"
+                    name="technologies"
+                    value="php"
+                  />
+                  PHP
+                </label>
+                <label>
+                  <input
+                    class="technologiesCheckbox"
+                    type="checkbox"
+                    name="technologies"
+                    value="git"
+                  />
+                  Git
+                </label>
+              </div>
+            </div>
+            <div class="formItens">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="05"
+                placeholder="Tell us a little about you or your project..."
+              ></textarea>
+            </div>
+            <div id="divBtnSubmit">
+              <button type="submit" id="submit">
+                SEND! <img src="/Assets/email.png" width="35px" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

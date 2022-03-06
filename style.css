@@ -1,0 +1,216 @@
+/* ^^ Project Css configurantion ^^ */
+:root {
+  --orange: #fca311;
+  --dark: #0f192e;
+  --purple: #8836bf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Customize radio and checkbox */
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+input[type="radio"]:checked {
+  background-color: var(--purple);
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 1px solid black;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--purple);
+}
+
+html {
+  background-color: var(--dark);
+}
+
+main {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 50px;
+}
+
+#imgContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#title,
+#title span {
+  font-size: 3rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 0px 5px;
+}
+
+#title span {
+  color: var(--orange);
+}
+#svgImg {
+  min-width: 300px;
+  max-width: 80%;
+  padding: 5px;
+}
+
+#description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+
+p,
+label {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+p {
+  font-weight: 800;
+}
+
+.formItens {
+  padding: 10px 0px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  border: 2px solid var(--purple);
+  border-radius: 8px;
+  line-height: 2;
+  font-size: 1.2em;
+  padding: 0px 10px;
+  font-weight: 100;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea,
+select {
+  outline-color: var(--orange);
+}
+
+option {
+  background-color: var(--purple);
+  color: white;
+  box-shadow: 20px;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+textarea {
+  padding: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  font-weight: 800;
+}
+
+.clue {
+  color: var(--purple);
+}
+
+#divBtnSubmit {
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  width: 80%;
+  max-width: 300px;
+  background-color: var(--purple);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.divCheck {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Mobile first Responsive */
+
+@media (min-width: 750px) {
+  #title,
+  #title span {
+    font-size: 4rem;
+  }
+
+  #description {
+    font-size: 1.5rem;
+  }
+
+  .divCheck {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  #imgContainer {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1400px) {
+  #title,
+  #title span {
+    font-size: 5rem;
+  }
+}
