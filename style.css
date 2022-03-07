@@ -53,13 +53,15 @@ html {
 }
 
 main {
-  max-width: 60%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
-  border-radius: 20px;
   background-color: #ffffff;
-  padding: 50px;
+  padding: 20px;
+}
+
+#formContainer {
+  margin-right: 20px;
 }
 
 #imgContainer {
@@ -187,7 +189,7 @@ label {
 
 /* Mobile first Responsive */
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
   #title,
   #title span {
     font-size: 4rem;
@@ -200,11 +202,21 @@ label {
   .divCheck {
     flex-direction: row;
   }
+
+  main {
+    max-width: 70%;
+    margin: 50px auto;
+    border-radius: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
   #imgContainer {
     flex-wrap: nowrap;
+  }
+
+  main {
+    max-width: 60%;
   }
 }
 
@@ -212,5 +224,9 @@ label {
   #title,
   #title span {
     font-size: 5rem;
+  }
+
+  main {
+    max-width: 60%;
   }
 }
